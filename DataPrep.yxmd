@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Bank details</AnnotationText>
+          <DefaultAnnotationText>bank.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="job" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="marital" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="education" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="default" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="balance" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="housing" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="loan" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="contact" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="day" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="month" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="duration" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="campaign" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="pdays" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="previous" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="poutcome" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="deposit" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="918" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (34)">age=False,job=True,marital=True,education=True,default=True,balance=False,housing=True,loan=True</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>One hot encoding</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="One-Hot Encoder\One-Hot Encoder.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1038" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="age" order="Ascending" />
+            <Field field="balance" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sorting data</AnnotationText>
+          <DefaultAnnotationText>age - Ascending
+balance - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1134" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\niksh\Downloads\Vedanti\Alteryx\Data\Clustering_data.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Store output</AnnotationText>
+          <DefaultAnnotationText>Clustering_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="126" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="age" selected="True" />
+            <Field field="job" selected="True" />
+            <Field field="marital" selected="True" />
+            <Field field="education" selected="True" />
+            <Field field="default" selected="True" />
+            <Field field="balance" selected="True" />
+            <Field field="housing" selected="True" />
+            <Field field="loan" selected="True" />
+            <Field field="contact" selected="True" />
+            <Field field="day" selected="True" />
+            <Field field="month" selected="True" />
+            <Field field="duration" selected="True" />
+            <Field field="campaign" selected="True" />
+            <Field field="pdays" selected="True" />
+            <Field field="previous" selected="True" />
+            <Field field="poutcome" selected="True" />
+            <Field field="deposit" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>correct datatypes of columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Byte" />
+            <Field name="job" size="13" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="marital" size="8" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="education" size="9" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="default" size="3" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="balance" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Int32" />
+            <Field name="housing" size="3" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="loan" size="3" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="contact" size="9" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="day" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Byte" />
+            <Field name="month" size="3" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="duration" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Int16" />
+            <Field name="campaign" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Byte" />
+            <Field name="pdays" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Int16" />
+            <Field name="previous" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="Byte" />
+            <Field name="poutcome" size="7" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+            <Field name="deposit" size="3" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\niksh\AppData\Local\Temp\Alteryx\Engine_13612_db0e597c56e4ed4baed2ad92d03a8b5b_\Engine_13612_8e21da16e53175418a5f0eb79643fd0f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\niksh\AppData\Local\Temp\Alteryx\Engine_13612_db0e597c56e4ed4baed2ad92d03a8b5b_\Engine_13612_fcd783ef2babb84095b6255869469edb~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="contact" selected="False" />
+            <SelectField field="day" selected="False" />
+            <SelectField field="month" selected="False" />
+            <SelectField field="duration" selected="False" />
+            <SelectField field="campaign" selected="False" />
+            <SelectField field="pdays" selected="False" />
+            <SelectField field="previous" selected="False" />
+            <SelectField field="poutcome" selected="False" />
+            <SelectField field="deposit" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Selecting required columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>balance</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-05-30 23:38:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2024-05-30 23:38:21</StartDate>
+              <EndDate>2024-05-30 23:38:21</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter records having balance</AnnotationText>
+          <DefaultAnnotationText>[balance] &gt;= 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="522" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="age" />
+            <Field field="job" />
+            <Field field="marital" />
+            <Field field="education" />
+            <Field field="default" />
+            <Field field="balance" />
+            <Field field="housing" />
+            <Field field="loan" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select unique records</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="630" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">age=True,job=True,marital=True,education=True,default=True,balance=True,housing=True,loan=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Review modified data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="job" selected="True" size="32" />
+            <SelectField field="marital" selected="True" size="32" />
+            <SelectField field="education" selected="True" size="32" />
+            <SelectField field="default" selected="True" size="32" />
+            <SelectField field="housing" selected="True" size="32" />
+            <SelectField field="loan" selected="True" size="32" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Modify datatypes of columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="750" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;housing_&quot; + [housing]" field="housing" size="32" type="String" enabled="true" />
+            <FormulaField expression="&quot;loan_&quot; + [loan]" field="loan" size="32" type="String" enabled="true" />
+            <FormulaField expression="&quot;Job_&quot; + [job]" field="job" size="32" type="String" enabled="true" />
+            <FormulaField expression="&quot;Marital_&quot;+[marital]" field="marital" size="32" type="String" enabled="true" />
+            <FormulaField expression="&quot;Education_&quot; + [education]" field="education" size="32" type="String" enabled="true" />
+            <FormulaField expression="&quot;Default_&quot; + [default]" field="default" size="32" type="String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Applying formulas before one hot encoding</AnnotationText>
+          <DefaultAnnotationText>housing = "housing_" + [housing]
+loan = "loan_" + [loan]
+job = "Job_" + [job]
+ma...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="269" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">age=True,job=True,marital=True,education=True,default=True,balance=True,housing=True,loan=True,contact=True,day=True,month=True,duration=True,campaign=True,pdays=True,previous=True,poutcome=True,deposit=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Field Summary</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\niksh\AppData\Local\Temp\Alteryx\Engine_13612_db0e597c56e4ed4baed2ad92d03a8b5b_\Engine_13612_06083472b7ca0d43b2fa8100d06b8bcd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output16" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="11" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Interactive" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input55" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Reports" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Interactive" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataPrep</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a88f0f31-f8f4-4b0b-9bd9-4eeaccec7f19" />
+      <Telemetry>
+        <PreviousWorkflowId value="b11a323f-20a8-4dcd-92ce-5132cf2af162" />
+        <OriginWorkflowId value="b11a323f-20a8-4dcd-92ce-5132cf2af162" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

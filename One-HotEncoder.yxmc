@@ -1,0 +1,1820 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="678" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output16</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>O Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" type="V_WString" size="6" />
+            <SelectField field="CustomerID" selected="False" />
+            <SelectField field="Store Number" selected="False" />
+            <SelectField field="Customer Segment" selected="False" />
+            <SelectField field="Responder" selected="False" />
+            <SelectField field="First Name" selected="False" />
+            <SelectField field="Last Name" selected="False" />
+            <SelectField field="Address" selected="False" />
+            <SelectField field="State" selected="False" />
+            <SelectField field="Zip" selected="False" />
+            <SelectField field="Lat" selected="False" />
+            <SelectField field="Lon" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+            <Field name="City" size="6" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="630" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="306" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>List Box (34)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input55</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="CustomerID" />
+                <Field name="Store Number" />
+                <Field name="Customer Segment" />
+                <Field name="Responder" />
+                <Field name="First Name" />
+                <Field name="Last Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="State" />
+                <Field name="Zip" />
+                <Field name="Lat" />
+                <Field name="Lon" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>10</c>
+                  <c>100</c>
+                  <c>Home Office</c>
+                  <c>No</c>
+                  <c>PAMELA</c>
+                  <c>WRIGHT</c>
+                  <c>2316 E 5TH AVE</c>
+                  <c>DENVER</c>
+                  <c>CO</c>
+                  <c>80206</c>
+                  <c>39.7239928674084</c>
+                  <c>-104.959232244898</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerID" source="TextInput:" type="Byte" />
+            <Field name="Store Number" source="TextInput:" type="Byte" />
+            <Field name="Customer Segment" size="11" source="TextInput:" type="String" />
+            <Field name="Responder" size="2" source="TextInput:" type="String" />
+            <Field name="First Name" size="6" source="TextInput:" type="String" />
+            <Field name="Last Name" size="6" source="TextInput:" type="String" />
+            <Field name="Address" size="14" source="TextInput:" type="String" />
+            <Field name="City" size="6" source="TextInput:" type="String" />
+            <Field name="State" size="2" source="TextInput:" type="String" />
+            <Field name="Zip" source="TextInput:" type="Int32" />
+            <Field name="Lat" source="TextInput:" type="Double" />
+            <Field name="Lon" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="462" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Order
+of Columns</AnnotationText>
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="162" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType size="6">String</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+            <Field name="CustomerID" source="TextInput:" type="Byte" />
+            <Field name="Store Number" source="TextInput:" type="Byte" />
+            <Field name="Customer Segment" size="11" source="TextInput:" type="String" />
+            <Field name="Responder" size="2" source="TextInput:" type="String" />
+            <Field name="First Name" size="6" source="TextInput:" type="String" />
+            <Field name="Last Name" size="6" source="TextInput:" type="String" />
+            <Field name="Address" size="14" source="TextInput:" type="String" />
+            <Field name="City" size="6" source="TextInput:" type="String" />
+            <Field name="State" size="2" source="TextInput:" type="String" />
+            <Field name="Zip" source="TextInput:" type="Int32" />
+            <Field name="Lat" source="TextInput:" type="Double" />
+            <Field name="Lon" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Error.Error">
+        <Position x="126" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([#1],"True")
+At least one field must be selected</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="392" y="464" width="619" height="119" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Order of Columns</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="474" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Text</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>
+              </RootName>
+              <Delimeters value="," />
+              <NumFields value="100" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="1" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="3" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="4" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="5" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="6" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="7" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="8" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="9" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="10" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="11" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="12" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="13" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="14" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="15" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="16" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="17" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="18" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="19" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="20" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="21" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="22" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="23" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="24" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="25" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="26" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="27" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="28" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="29" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="30" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="31" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="32" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="33" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="34" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="35" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="36" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="37" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="38" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="39" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="40" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="41" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="42" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="43" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="44" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="45" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="46" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="47" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="48" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="49" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="50" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="51" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="52" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="53" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="54" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="55" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="56" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="57" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="58" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="59" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="60" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="61" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="62" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="63" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="64" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="65" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="66" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="67" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="68" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="69" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="70" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="71" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="72" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="73" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="74" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="75" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="76" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="77" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="78" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="79" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="80" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="81" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="82" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="83" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="84" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="85" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="86" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="87" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="88" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="89" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="90" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="91" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="92" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="93" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="94" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="95" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="96" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="97" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="98" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="99" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="100" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="858" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="sdfasdaf" />
+                <Field name="CustomerID=False" />
+                <Field name="Customer Segment=False" />
+                <Field name="Responder=False" />
+                <Field name="First Name=False" />
+                <Field name="Last Name=False" />
+                <Field name="Address=False" />
+                <Field name="City=False" />
+                <Field name="State=False" />
+                <Field name="Zip=False" />
+                <Field name="Lat=False" />
+                <Field name="Lon=False" />
+                <Field name="*Unknown" />
+                <Field name="Test" selected="False" />
+              </Fields>
+              <Expression>replace([_CurrentField_],"=False","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="666" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>!Contains([Name],"=True") and
+!Contains([Name],"Field_")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="570" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>FirstRow</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Text" />
+                <Field name="1" />
+                <Field name="2" />
+                <Field name="3" />
+                <Field name="4" />
+                <Field name="5" />
+                <Field name="6" />
+                <Field name="7" />
+                <Field name="8" />
+                <Field name="9" />
+                <Field name="10" />
+                <Field name="11" />
+                <Field name="12" />
+                <Field name="13" />
+                <Field name="14" />
+                <Field name="15" />
+                <Field name="16" />
+                <Field name="17" />
+                <Field name="18" />
+                <Field name="19" />
+                <Field name="20" />
+                <Field name="21" />
+                <Field name="22" />
+                <Field name="23" />
+                <Field name="24" />
+                <Field name="25" />
+                <Field name="26" />
+                <Field name="27" />
+                <Field name="28" />
+                <Field name="29" />
+                <Field name="30" />
+                <Field name="31" />
+                <Field name="32" />
+                <Field name="33" />
+                <Field name="34" />
+                <Field name="35" />
+                <Field name="36" />
+                <Field name="37" />
+                <Field name="38" />
+                <Field name="39" />
+                <Field name="40" />
+                <Field name="41" />
+                <Field name="42" />
+                <Field name="43" />
+                <Field name="44" />
+                <Field name="45" />
+                <Field name="46" />
+                <Field name="47" />
+                <Field name="48" />
+                <Field name="49" />
+                <Field name="50" />
+                <Field name="51" />
+                <Field name="52" />
+                <Field name="53" />
+                <Field name="54" />
+                <Field name="55" />
+                <Field name="56" />
+                <Field name="57" />
+                <Field name="58" />
+                <Field name="59" />
+                <Field name="60" />
+                <Field name="61" />
+                <Field name="62" />
+                <Field name="63" />
+                <Field name="64" />
+                <Field name="65" />
+                <Field name="66" />
+                <Field name="67" />
+                <Field name="68" />
+                <Field name="69" />
+                <Field name="70" />
+                <Field name="71" />
+                <Field name="72" />
+                <Field name="73" />
+                <Field name="74" />
+                <Field name="75" />
+                <Field name="76" />
+                <Field name="77" />
+                <Field name="78" />
+                <Field name="79" />
+                <Field name="80" />
+                <Field name="81" />
+                <Field name="82" />
+                <Field name="83" />
+                <Field name="84" />
+                <Field name="85" />
+                <Field name="86" />
+                <Field name="87" />
+                <Field name="88" />
+                <Field name="89" />
+                <Field name="90" />
+                <Field name="91" />
+                <Field name="92" />
+                <Field name="93" />
+                <Field name="94" />
+                <Field name="95" />
+                <Field name="96" />
+                <Field name="97" />
+                <Field name="98" />
+                <Field name="99" />
+                <Field name="100" />
+                <Field name="*Unknown" />
+                <Field name="Test" selected="False" />
+              </Fields>
+              <Expression />
+              <FirstRow>
+                <OnError>Warn</OnError>
+              </FirstRow>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_3" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_4" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_5" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_6" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_7" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_8" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_9" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_10" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_11" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_12" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_13" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_14" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_15" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_16" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_17" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_18" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_19" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_20" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_21" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_22" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_23" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_24" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_25" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_26" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_27" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_28" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_29" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_30" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_31" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_32" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_33" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_34" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_35" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_36" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_37" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_38" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_39" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_40" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_41" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_42" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_43" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_44" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_45" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_46" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_47" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_48" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_49" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_50" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_51" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_52" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_53" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_54" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_55" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_56" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_57" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_58" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_59" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_60" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_61" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_62" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_63" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_64" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_65" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_66" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_67" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_68" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_69" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_70" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_71" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_72" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_73" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_74" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_75" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_76" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_77" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_78" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_79" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_80" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_81" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_82" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_83" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_84" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_85" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_86" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_87" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_88" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_89" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_90" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_91" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_92" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_93" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_94" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_95" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_96" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_97" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_98" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="Field_103_99" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="762" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="942" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>0</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="402" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Text" />
+                <Field name="Test" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>xxx</c>
+                  <c>sdfasdaf</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="392" y="200" width="218" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Determine Unused Fields</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="402" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Name" action="GroupBy" rename="Name" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="4" source="Summarize: GroupBy - Name" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Name" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="402" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="RecordID" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="CustomerID" selected="True" />
+                <Field field="Store Number" selected="True" />
+                <Field field="Customer Segment" selected="True" />
+                <Field field="Responder" selected="True" />
+                <Field field="First Name" selected="True" />
+                <Field field="Last Name" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="State" selected="True" />
+                <Field field="Zip" selected="True" />
+                <Field field="Lat" selected="True" />
+                <Field field="Lon" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+                <Field name="Name" size="16" source="Transpose:" type="String" />
+                <Field name="Value" size="23" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="534" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Name" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Name" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Name" selected="False" rename="Right_Name" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+                <Field name="Name" size="16" source="Transpose:" type="String" />
+                <Field name="Value" size="23" source="TextInput:" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Name" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+                <Field name="Name" size="16" source="Transpose:" type="String" />
+                <Field name="Value" size="23" source="TextInput:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Name" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Name" size="4" source="Summarize: GroupBy - Name" type="String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Name" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="822" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="RecordID" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="CrossTab:Group:Concat:" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="CustomerXXXXXSegment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="FirstXXXXXName" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="LastXXXXXName" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="StoreXXXXXNumber" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="726" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="replace([Name],&quot; &quot;,&quot;XXXXX&quot;)" field="Name" size="16" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Replace
+Spaces</AnnotationText>
+              <DefaultAnnotationText><![CDATA[Name = replace([Name]," ","XXXXX")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+                <Field name="Name" size="500" source="Formula: replace([Name],&quot; &quot;,&quot;XXXXX&quot;)" type="String" />
+                <Field name="Value" size="23" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="630" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" size="500" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="String" />
+                <Field name="Name" size="500" source="Transpose:" type="String" />
+                <Field name="Value" size="23" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="392" y="247" width="1207" height="166" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Encoding Magic</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="882" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="replace([Value],&quot; &quot;,&quot;XXXXX&quot;)" field="Value" size="500" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Value = replace([Value]," ","XXXXX")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="outputBit" size="1" source="Formula: 1" type="String" />
+                <Field name="Name" size="5" source="Transpose:" type="String" />
+                <Field name="Value" size="500" source="Formula: replace([Value],&quot; &quot;,&quot;XXXXX&quot;)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="1362" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="ARVADA" />
+                <Field name="AURORA" />
+                <Field name="BOULDER" />
+                <Field name="BRIGHTON" />
+                <Field name="BROOMFIELD" />
+                <Field name="CASTLE_ROCK" />
+                <Field name="COMMERCE_CITY" />
+                <Field name="DENVER" />
+                <Field name="ENGLEWOOD" />
+                <Field name="GOLDEN" />
+                <Field name="HENDERSON" />
+                <Field name="LAFAYETTE" />
+                <Field name="LITTLETON" />
+                <Field name="LONE_TREE" />
+                <Field name="LOUISVILLE" />
+                <Field name="MORRISON" />
+                <Field name="PARKER" />
+                <Field name="THORNTON" />
+                <Field name="WESTMINSTER" />
+                <Field name="WHEAT_RIDGE" />
+                <Field name="Address" />
+                <Field name="CustomerID" />
+                <Field name="CustomerXXXXXSegment" />
+                <Field name="FirstXXXXXName" />
+                <Field name="LastXXXXXName" />
+                <Field name="Lat" />
+                <Field name="Lon" />
+                <Field name="Responder" />
+                <Field name="State" />
+                <Field name="StoreXXXXXNumber" />
+                <Field name="Zip" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>replace([_CurrentField_],"XXXXX"," ")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="Customer Segment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="First Name" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="Last Name" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="Store Number" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="1266" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>!contains([Name],"Right_")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="CustomerXXXXXSegment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="FirstXXXXXName" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="LastXXXXXName" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="StoreXXXXXNumber" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1074" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>All</FieldType>
+              <Fields orderChanged="False">
+                <Field name="21" />
+                <Field name="123" />
+                <Field name="221" />
+                <Field name="233" />
+                <Field name="Apfel" />
+                <Field name="Banane" />
+                <Field name="Birne" />
+                <Field name="Gemusse" />
+                <Field name="Obst" />
+                <Field name="Salat" />
+                <Field name="Tomate" />
+                <Field name="*Unknown" />
+                <Field name="RecordID" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>IIF(IsNull([_CurrentField_]),0,[_CurrentField_])</Expression>
+              <ChangeFieldType value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IIF(IsNull([_CurrentField_]),0,[_CurrentField_])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="786" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="RecordID" />
+                <Field field="outputBit" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="Value" selected="True" />
+                <Field field="outputBit" selected="False" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="outputBit" size="1" source="Formula: 1" type="String" />
+                <Field name="Name" size="5" source="Transpose:" type="String" />
+                <Field name="Value" size="500" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="978" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="RecordID" />
+              </GroupFields>
+              <HeaderField field="Value" />
+              <DataField field="outputBit" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="DENVER" size="1" source="Formula: 1" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="690" y="281" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="1" field="outputBit" size="1" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[outputBit = 1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="Value" size="500" source="TextInput:" type="String" />
+                <Field name="outputBit" size="1" source="Formula: 1" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="594" y="281" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="False" />
+                <SelectField field="Value" selected="True" size="500" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="Value" size="500" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="498" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Value" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Value - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field name="Value" size="6" source="TextInput:" type="String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Value" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="402" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="RecordID" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="Food" selected="True" />
+                <Field field="Type" selected="True" />
+                <Field field="Value" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="RecordID: Starting Value=1" type="V_WString" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field name="Value" size="6" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1170" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_RecordID" selected="False" input="Left_" />
+                    <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="RecordID" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="CustomerXXXXXSegment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="FirstXXXXXName" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="LastXXXXXName" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="StoreXXXXXNumber" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="RecordID" size="6" source="CrossTab:Group:Concat:" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="CustomerXXXXXSegment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="FirstXXXXXName" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="LastXXXXXName" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="StoreXXXXXNumber" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="RecordID" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1458" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field name="Test" size="8" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="Customer Segment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="First Name" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="Last Name" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="Store Number" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1530" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Test" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="xxx" size="3" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text" name="xxx2" size="3" source="TextToColumns: Parsed from Text" type="String" />
+                <Field name="DENVER" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+                <Field name="Address" size="2048" source="CrossTab:Header:Name:Address:Concat:" type="V_String" />
+                <Field name="CustomerID" size="2048" source="CrossTab:Header:Name:CustomerID:Concat:" type="V_String" />
+                <Field name="Customer Segment" size="2048" source="CrossTab:Header:Name:CustomerXXXXXSegment:Concat:" type="V_String" />
+                <Field name="First Name" size="2048" source="CrossTab:Header:Name:FirstXXXXXName:Concat:" type="V_String" />
+                <Field name="Last Name" size="2048" source="CrossTab:Header:Name:LastXXXXXName:Concat:" type="V_String" />
+                <Field name="Lat" size="2048" source="CrossTab:Header:Name:Lat:Concat:" type="V_String" />
+                <Field name="Lon" size="2048" source="CrossTab:Header:Name:Lon:Concat:" type="V_String" />
+                <Field name="Responder" size="2048" source="CrossTab:Header:Name:Responder:Concat:" type="V_String" />
+                <Field name="State" size="2048" source="CrossTab:Header:Name:State:Concat:" type="V_String" />
+                <Field name="Store Number" size="2048" source="CrossTab:Header:Name:StoreXXXXXNumber:Concat:" type="V_String" />
+                <Field name="Zip" size="2048" source="CrossTab:Header:Name:Zip:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection Wireless="True">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="36" Connection="Action" />
+      <Destination ToolID="29" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="34" Connection="Question" />
+      <Destination ToolID="36" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="34" Connection="Question" />
+      <Destination ToolID="58" Connection="Question" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="34" Connection="Question" />
+      <Destination ToolID="85" Connection="Question" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="55" Connection="Question" />
+      <Destination ToolID="34" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="59" Connection="Action" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="75" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="69" Connection="Targets" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="80" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Left" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="82" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="82" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="48" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Join" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (34)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>One-Hot Encoder</Name>
+      <Description>Process categorical variables into a binary grid for use in predictive models.</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Bulien Tools</CategoryName>
+      <SearchTags>Categorical, Variable, Predictive, Binary</SearchTags>
+      <Author>Chris McEleavey (@mceleavey), @TheOC</Author>
+      <Company>Bulien</Company>
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c1080687-ff1a-4e95-b9d8-3f3c4c811cd2" />
+      <Telemetry>
+        <PreviousWorkflowId value="7d4c6034-e609-45b7-bf9a-be7c479acf4e" />
+        <OriginWorkflowId value="aac719da-95f0-48cc-91e7-b319d2f19b57" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateSelect</Type>
+              <Description />
+              <ToolId value="36" />
+              <Variable />
+              <SelectTool value="-1" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="58" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>xxx</ReplaceText>
+              <Destination>59/Data/r/c[1]</Destination>
+            </Action>
+            <Action>
+              <Type>Error</Type>
+              <Description>At least one field must be selected</Description>
+              <ToolId value="85" />
+              <Expression>!Contains([#1],"True")</Expression>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (14)</Name>
+          <ToolId value="14" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (16)</Description>
+              <Name>Macro Output (16)</Name>
+              <ToolId value="16" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Select Fields to Encode</Description>
+              <Name>List Box (34)</Name>
+              <ToolId value="34" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="55" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (55)</Name>
+              <ToolId value="55" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

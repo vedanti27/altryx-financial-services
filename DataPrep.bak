@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>bank.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="job" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="marital" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="education" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="default" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="balance" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="housing" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="loan" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="contact" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="day" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="month" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="duration" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="campaign" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="pdays" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="previous" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="poutcome" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+            <Field name="deposit" size="254" source="File: C:\Users\niksh\Downloads\Vedanti\Alteryx\bank.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataPrep</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a88f0f31-f8f4-4b0b-9bd9-4eeaccec7f19" />
+      <Telemetry>
+        <PreviousWorkflowId value="b11a323f-20a8-4dcd-92ce-5132cf2af162" />
+        <OriginWorkflowId value="b11a323f-20a8-4dcd-92ce-5132cf2af162" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
